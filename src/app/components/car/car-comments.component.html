@@ -1,0 +1,26 @@
+<div class="ui comments">
+    <h4 class="ui dividing header">Comments</h4>
+    <div class="comment" *ngFor="let cmnt of comments">
+        <a class="avatar">
+            <img src="http://semantic-ui.com/images/avatar/small/matt.jpg">
+        </a>
+        <div class="content">
+            <a class="author">{{cmnt.name}}</a>
+            <div class="text">
+                {{cmnt.comment}}
+            </div>
+        </div>
+    </div>
+    <form class="ui reply form">
+        <div class="field">
+            <label>Author</label>
+            <input [(ngModel)]="comment.name" name="author">
+        </div>
+        <div class="field">
+            <textarea [(ngModel)]="comment.comment" name="comment" rows="2"></textarea>
+        </div>
+        <div class="ui blue labeled submit icon button" (click)="addComment()">
+            <i class="icon edit"></i> Add Comment
+        </div>
+    </form>
+</div>

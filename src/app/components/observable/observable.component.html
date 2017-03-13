@@ -1,0 +1,43 @@
+<h3 class="ui header">
+  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#observables-and-server-data" target="_blank">
+    Http and Observables
+  </a>
+</h3>
+<div class="ui segment">
+  <h4 class="ui header">Add a Task</h4>
+  <div class="ui small form">
+    <div class="six wide field">
+      <label>Title</label>
+      <input [(ngModel)]="task.title" placeholder="title">
+    </div>
+    <div class="inline field">
+      <div class="ui toggle checkbox">
+        <input type="checkbox" [(ngModel)]="task.completed" name="completed">
+        <label>Completed</label>
+      </div>
+    </div>
+    <div class="field">
+      <button class="circular ui icon button green" (click)="addTask()">
+        <i class="icon plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="ui red inverted segment" *ngIf="errorMessage">{{errorMessage}}</div>
+<div class="ui segment">
+  <div class="ui message">
+    <div class="header">
+      Tasks
+    </div>
+    <ul class="ui list">
+      <a class="item" *ngFor="let tsk of tasks" (click)="toggleComplete(tsk)">
+        <i class="check icon green" *ngIf="tsk.completed"></i>
+        <i class="minus icon red" *ngIf="!tsk.completed"></i>
+        <div class="content">
+          <div class="header">{{tsk.title}}</div>
+          <div class="description">{{tsk.title}}</div>
+        </div>
+      </a>
+    </ul>
+  </div>
+</div>

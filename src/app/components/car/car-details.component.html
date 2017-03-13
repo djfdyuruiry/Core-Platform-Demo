@@ -1,0 +1,16 @@
+<div class="ui two column grid">
+  <div class="column" *ngFor="let car of cars">
+    <a class="ui fluid card" [href]="car.source" target="_blank">
+      <div class="image">
+        <img [src]="car.url" class="ui image">
+      </div>
+      <div class="content">
+        <div class="header">{{car.model}}</div>
+        <div class="meta">{{car.make}}</div>
+        <div class="description">
+          {{car.description}}
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

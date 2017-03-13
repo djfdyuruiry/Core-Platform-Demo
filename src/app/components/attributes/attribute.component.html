@@ -1,0 +1,18 @@
+<h3 class="ui header">
+  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#attribute-directives" target="_blank">
+    Attribute Directives
+  </a>
+</h3>
+<div class="ui segment">
+  <div class="ui toggle checkbox">
+    <input type="checkbox" name="toggle" (click)="setToggle()" [checked]="toggle">
+    <label>Toggle - {{toggle}}</label>
+  </div>
+  <div class="ui divider"></div>
+  <div class="ui inverted segment" [class.red]="!toggle" [class.orange]="toggle">
+    <p>[class.red]="!toggle" [class.orange]="toggle"</p>
+  </div>
+  <div class="ui inverted segment" [ngClass]="{ red: !toggle, blue: toggle }">
+    <p>[ngClass]="&#123; red: !toggle, blue: toggle &#125;" syntax</p>
+  </div>
+</div>

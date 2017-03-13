@@ -1,0 +1,16 @@
+<h3 class="ui header">
+  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#implementing-jsonp">
+    Jsonp
+  </a>
+</h3>
+<div class="ui segment">
+  <p>
+    Search Wikipedia when typing stops. Click a subject link to open the wiki in a new tab.
+  </p>
+  <div class="ui input">
+    <input #term (keyup)="search(term.value)" />
+  </div>
+  <div class="ui list">
+    <a class="item" *ngFor="let item of items | async" [href]="baseUrl + item" target="_blank">{{item}}</a>
+  </div>
+</div>

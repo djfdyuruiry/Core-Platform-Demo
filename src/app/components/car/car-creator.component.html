@@ -1,0 +1,28 @@
+<h4 class="ui header">Add Car</h4>
+<div class="ui form">
+  <div class="four fields">
+    <div class="field">
+      <label>Make</label>
+      <input [(ngModel)]="car.make" placeholder="make">
+    </div>
+    <div class="field">
+      <label>Model</label>
+      <input [(ngModel)]="car.model" placeholder="model">
+    </div>
+    <div class="field">
+      <label>Source</label>
+      <input [(ngModel)]="car.source" placeholder="www.car.com">
+    </div>
+    <div class="field">
+      <label>Image URL</label>
+      <input [(ngModel)]="car.url" placeholder="www.car.com/image.png">
+    </div>
+  </div>
+  <div class="field">
+    <label>Description</label>
+    <textarea [(ngModel)]="car.description"></textarea>
+  </div>
+  <div class="field">
+    <button class="ui inverted blue button" (click)="addCar()">Add Car</button>
+  </div>
+</div>

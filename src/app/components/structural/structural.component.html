@@ -1,0 +1,52 @@
+<h3 class="ui header">
+  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#structural-directives" target="_blank">
+    Structural Directives
+  </a>
+</h3>
+<div class="ui segment">
+  <h4 class="ui header">NgSwitch</h4>
+  <div class="ui form">
+    <div class="field">
+      <label>Category</label>
+      <select class="ui dropdown" [(ngModel)]="category">
+        <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+    </select>
+    </div>
+  </div>
+  <div class="ui basic segment">
+    <div [ngSwitch]="category">
+      <div *ngSwitchCase="'business'">
+        <p>{{category}} - when actively working on a project</p>
+      </div>
+      <div *ngSwitchCase="'leisure'">
+        <p>{{category}} - when doing something to mitigate burnout</p>
+      </div>
+      <div *ngSwitchCase="'research'">
+        <p>{{category}} - when filling gaps in knowledge</p>
+      </div>
+      <div *ngSwitchDefault>
+        <p>category not currently selected</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui segment">
+  <h4 class="ui header">NgIf</h4>
+  <div class="ui toggle checkbox">
+    <input type="checkbox" name="toggle" (click)="setToggle()" [checked]="toggle">
+    <label>Toggle</label>
+  </div>
+  <div class="ui basic segment">
+    <p *ngIf="toggle">Shows when toggle is true</p>
+    <p *ngIf="!toggle">Shows when toggle is false</p>
+  </div>
+</div>
+<div class="ui segment">
+  <h4 class="ui header">NgFor</h4>
+  <label>Tasks</label>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <p>{{task}}</p>
+    </li>
+  </ul>
+</div>

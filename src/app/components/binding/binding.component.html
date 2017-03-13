@@ -1,0 +1,27 @@
+<h3 class="ui header">
+  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#data-binding-and-data-flow" target="_blank">
+    Data Binding
+  </a>
+</h3>
+<div class="ui segment">
+  <h4 class="ui header">Interpolation</h4>
+  <p>Number: {{num}}</p>
+</div>
+<div class="ui segment">
+  <h4 class="ui header">Event Binding</h4>
+  <div class="ui left labeled button" (click)="setNum()">
+    <a class="ui basic label">{{num}}</a>
+    <div class="ui icon button">
+      <i class="chevron up icon"></i>
+    </div>
+  </div>
+</div>
+<div class="ui segment">
+  <h4 class="ui header">Two-way Binding</h4>
+  <div class="ui input">
+    <input [(ngModel)]="color">
+  </div>
+  <div class="ui basic segment">
+    <p [style.color]="color">The color of this text is determined by the value specified in the input!</p>
+  </div>
+</div>

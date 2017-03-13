@@ -1,0 +1,44 @@
+{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "dotnet",
+            "isShellCommand": true,
+            "args": [
+                "build",
+                "${workspaceRoot}\\CoreExample.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "npm-install",
+            "command": "npm",
+            "isShellCommand": true,
+            "args": [
+                "install"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "webpack-vendors",
+            "command": "webpack",
+            "isShellCommand": true,
+            "args": [
+                "--config",
+                "webpack.config.vendor.js"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "webpack",
+            "command": "webpack",
+            "isShellCommand": true,
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

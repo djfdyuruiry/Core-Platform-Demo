@@ -1,0 +1,15 @@
+<div>
+  <h3 class="ui header">
+    <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8#complex-components" target="_blank">
+      Complex Components
+    </a>
+  </h3>
+  <div class="ui segment">
+    <car-creator (onAddCar)="addCar($event)"></car-creator>
+  </div>
+  <div class="ui segment">
+    <car-details [cars]="cars"></car-details>
+  </div>
+  <div class="ui segment">
+    <car-comments (onError)="onError($event)"></car-comments>
+  </div>
