@@ -1,7 +1,15 @@
-<div class="ui stackable inverted main menu">
-  <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8" class="header item" target="_blank">
-    <i class="github icon red"></i> Angular Overview
-  </a>
+<div class="ui top inverted attached main menu">
+  <div class="ui container">
+    <a class="item" (click)="toggleSidebar()"><i class="sidebar icon"></i> Menu</a>
+    <a href="https://gist.github.com/JaimeStill/4abc034749790c7e492f181db531e2d8" class="header item" target="_blank">
+      <i class="github icon red"></i> Angular Overview Walkthrough
+    </a>
+    <a class="item" href="https://github.com/JaimeStill/Core-Platform-Demo/tree/master" target="_blank">
+      <i class="github icon red"></i> See on GitHub
+    </a>
+  </div>
+</div>
+<div class="ui left vertical menu inverted sidebar">
   <a class="item red" routerLink="/attribute-directives" routerLinkActive="active">Attibute Directives</a>
   <a class="item red" routerLink="/structural-directives" routerLinkActive="active">Structural Directives</a>
   <a class="item red" routerLink="/binding" routerLinkActive="active">Data Binding</a>
@@ -10,12 +18,11 @@
   <a class="item red" routerLink="/promise" routerLinkActive="active">Promises and Http</a>
   <a class="item red" routerLink="/jsonp" routerLinkActive="active">Jsonp</a>
   <a class="item red" routerLink="/complex-components" routerLinkActive="active">Complex Components</a>
-  <a class="item" href="https://github.com/JaimeStill/Core-Platform-Demo/tree/master" target="_blank">
-    <i class="github icon red"></i> GitHub
-  </a>
 </div>
-<div class="ui main container">
-  <h2 class="ui header">Angular Overview</h2>
-  <div class="ui divider"></div>
-  <router-outlet></router-outlet>
+<div class="ui bottom attached segment pusher">
+  <div class="ui main container">
+    <h2 class="ui header">Angular Overview</h2>
+    <div class="ui divider"></div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
