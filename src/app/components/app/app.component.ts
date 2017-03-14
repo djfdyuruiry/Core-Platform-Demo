@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 export class AppComponent {
     toggleSidebar() {
         $('.ui.sidebar').sidebar({
-            context: $('app'),
+            context: $('#pushable-container'),
             transition: 'overlay'
         }).sidebar('toggle');
     }
