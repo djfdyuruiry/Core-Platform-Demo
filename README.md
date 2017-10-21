@@ -14,6 +14,5 @@ Demo UI & Original Template forked from: https://github.com/JaimeStill/Core-Plat
 
 # Todo
 
-- Migrate ASP .NET code to v2.2.0 from v1.1.0 (Currently only targets v2.2.0 as a runtime)
-- Update all libs to latest minor version
 - Clear UI pages out, leaving one page to use for copy/paste
+- Migrate to Anuglar 4
