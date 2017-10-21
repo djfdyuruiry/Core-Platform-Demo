@@ -1,6 +1,19 @@
-# Core-Platform-Demo
-App platform demonstration of Angular, ASP.NET Core, Semantic UI, and webpack
+# Tech
 
-## [See it in Azure](https://core-angular-platform.azurewebsites.net)  
+- ASP .NET Core v2.0.0
+- Angular v2.4
+- Semantic UI v2.2
+- Webpack v2.2
 
-Angular components are based on a combination of the [MVA - Introduction to Angular 2 Course](https://mva.microsoft.com/en-US/training-courses/introduction-to-angular-20-16540) and some good old scrubbing of the [Angular Docs](https://angular.io)
+# Template
+
+- Scripts to build/run/watch
+- .gitignore for dotnet and webpack
+
+Demo UI & Original Template forked from: https://github.com/JaimeStill/Core-Platform-Demo
+
+# Todo
+
+- Migrate ASP .NET code to v2.2.0 from v1.1.0 (Currently only targets v2.2.0 as a runtime)
+- Update all libs to latest minor version
+- Clear UI pages out, leaving one page to use for copy/paste
