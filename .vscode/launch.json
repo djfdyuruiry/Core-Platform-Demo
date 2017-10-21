@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.1/CoreExample.dll",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.1/dotnet-core-2_angular-2_semantic-ui_template.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false,

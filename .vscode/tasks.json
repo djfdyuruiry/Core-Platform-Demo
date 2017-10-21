@@ -7,7 +7,7 @@
             "isShellCommand": true,
             "args": [
                 "build",
-                "${workspaceRoot}\\CoreExample.csproj"
+                "${workspaceRoot}\\dotnet-core-2_angular-2_semantic-ui_template.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
