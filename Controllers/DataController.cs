@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CoreExample.Models;
-using CoreExample.Models.Extensions;
+using Template.Models;
+using Template.Models.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreExample.Controllers
+namespace Template.Controllers
 {
     [Route("api/[controller]")]
     public class DataController : Controller

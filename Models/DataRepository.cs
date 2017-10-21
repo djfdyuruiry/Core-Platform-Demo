@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CoreExample.Models
+namespace Template.Models
 {
     public class DataRepository
     {

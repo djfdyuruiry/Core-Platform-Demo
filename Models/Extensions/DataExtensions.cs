@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreExample.Models.Extensions
+namespace Template.Models.Extensions
 {
     public static class DataExtensions
     {

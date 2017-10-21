@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CoreExample.Controllers
+namespace Template.Controllers
 {
     public class HomeController : Controller
     {

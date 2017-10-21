@@ -1,4 +1,4 @@
-namespace CoreExample.Models
+namespace Template.Models
 {
     public class CommentModel
     {
