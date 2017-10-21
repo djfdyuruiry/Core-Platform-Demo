@@ -3,7 +3,7 @@
 - ASP .NET Core v2.0.0
 - Angular v2.4
 - Semantic UI v2.2
-- Webpack v2.2
+- Webpack v2.7
 
 # Template
 
